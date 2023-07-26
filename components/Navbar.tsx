@@ -1,17 +1,46 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useAnimate, stagger } from "framer-motion";
 import logo from '../Assets/Images/logo.png'
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  
+
   return (
-    <div className='fixed h-full w-[100px] border-r-2 border-[#8D8D8D]'>
+    <div className='fixed h-full w-[100px] border-r-2  border-[#8D8D8D]'>
         <div className='flex flex-col py-10 justify-between items-center h-full '>
             <Image src={logo} alt='' className='w-[146px] h-[59px] rotate-[270deg] cursor-pointer'/>
+            <div className='z-[100]' onClick={() => setIsOpen(!isOpen)}>
+            {
+            !isOpen ?
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className='cursor-pointer'>
-              <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
-              <line x1="9" y1="16" x2="42" y2="16" stroke="white" stroke-width="2"/>
-              <line x1="9" y1="32" x2="31" y2="32" stroke="white" stroke-width="2"/>
-            </svg>
+            <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+            <line className='animate-[fade-in_.5s_ease-in-out]' x1="9" y1="16" x2="42" y2="16" stroke="white" stroke-width="2"/>
+            <line className='animate-[fade-in_.5s_ease-in-out]' x1="9" y1="32" x2="31" y2="32" stroke="white" stroke-width="2"/>
+          </svg>
+          :
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className='cursor-pointer'>
+            <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+            <line className='animate-[fade-in_.5s_ease-in-out]' x1="13.2929" y1="37.6274" x2="36.6274" y2="14.2929" stroke="white" stroke-width="2"/>
+            <line className='animate-[fade-in_.5s_ease-in-out]' x1="36.6274" y1="37.0416" x2="13.2928" y2="13.7071" stroke="white" stroke-width="2"/>
+          </svg>
+          }
+          {
+            isOpen &&
+            <div className=''>
+            <nav className=" h-full fixed left-[100px] top-0 rounded-lg drop-shadow-lg flex justify-center  items-center w-[300px] bg-[#4a4a4a]/80 animate-[side-in-left_1s_ease-in-out]">
+          <ul className='flex flex-col gap-10 ml-[280px] text-white text-3xl justify-center items-start translate-x-[-100%] will-change-transform animate-[fade-in-down_1s_ease-in-out]'>
+            <li className='cursor-pointer drop-shadow-lg'>Home</li>
+            <li>DAPP</li>
+            <li>LitePaper</li>
+            <li>Team</li>
+          </ul>
+        </nav>
+            </div>
+          }
+          </div>
             <div className='flex flex-col space-y-3 cursor-pointer'>
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5C0 2.23858 2.23858 0 5 0H27C29.7614 0 32 2.23858 32 5V27C32 29.7614 29.7614 32 27 32H5C2.23858 32 0 29.7614 0 27V5ZM22.1 11.5C22.8 11.4 23.4 11.3 24 11C23.6 11.7 23 12.3 22.3 12.7C22.5 17.4 19.1 22.5 13 22.5C11.2 22.5 9.5 21.9 8 21C9.7 21.2 11.5 20.7 12.7 19.8C11.2 19.8 10 18.8 9.6 17.5C10.1 17.6 10.6 17.5 11.1 17.4C9.6 17 8.5 15.6 8.5 14.1C9 14.3 9.5 14.5 10 14.5C8.6 13.5 8.1 11.6 9 10.1C10.7 12.1 13.1 13.4 15.8 13.5C15.3 11.5 16.9 9.5 19 9.5C19.9 9.5 20.8 9.9 21.4 10.5C22.2 10.3 22.9 10.1 23.5 9.7C23.3 10.5 22.8 11.1 22.1 11.5Z" fill="#1DDA0D"/>

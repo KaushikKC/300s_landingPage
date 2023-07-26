@@ -12,6 +12,40 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        'fade-in-down': {
+          '0%': {
+            transform: "scale(0.5)", opacity: 0, filter: "blur(10px)"
+           
+          },
+          '100%': {
+            opacity: '1',
+           
+          },
+        },
+        'side-in-left': {
+          '0%': {
+            opacity: '0',
+            // transform: 'translateX(-100%)',
+          },
+          '100%': {
+            opacity: '1',
+            // transform: 'translateX(0)',
+          },
+        },
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+          },
+          '50%': {
+            opacity: '0.5',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        }
+
+      }
     },
   },
   plugins: [],
