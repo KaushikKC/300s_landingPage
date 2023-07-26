@@ -1,0 +1,24 @@
+<svg width="380" height="754" viewBox="0 0 380 754" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M97.5735 629.335C48.1291 570.075 55.9594 481.803 115.063 432.173L186.07 372.548L305.058 515.155C346.184 564.444 339.671 637.865 290.511 679.145V679.145C241.351 720.425 168.16 713.933 127.034 664.643L97.5735 629.335Z" stroke="url(#paint0_angular_31_595)" stroke-width="72"/>
+<path d="M281.949 124.555C331.394 183.814 323.563 272.086 264.459 321.716L193.453 381.342L74.4647 238.735C33.339 189.445 39.852 116.025 89.0118 74.7444V74.7444C138.172 33.4642 211.363 39.9568 252.488 89.2459L281.949 124.555Z" stroke="url(#paint1_angular_31_595)" stroke-width="72"/>
+<path d="M195 327.5L130 249L269 258C269 258 264.469 270.165 253 283C237 299 214.974 317.948 195 327.5Z" fill="white"/>
+<path d="M134 617L182 590L292 616C291.853 618.05 287.5 627.5 283 634C282 636 273.5 649.5 257 659C242.5 668.5 221.698 671.124 214 670.5C195.5 669 186 665.887 172 657C158.5 648.431 149.714 635.5 145 630C139 623 137 620.5 134 617Z" fill="white"/>
+<circle cx="180" cy="435" r="4" fill="white"/>
+<ellipse cx="180" cy="441.5" rx="4" ry="3.5" fill="white"/>
+<circle cx="180" cy="448" r="4" fill="white"/>
+<ellipse cx="180" cy="467.5" rx="4" ry="3.5" fill="white"/>
+<circle cx="180.5" cy="529.5" r="4.5" fill="white"/>
+<circle cx="180" cy="478" r="4" fill="white"/>
+<defs>
+<radialGradient id="paint0_angular_31_595" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(193.785 563.218) rotate(-92.3169) scale(265.232 255.634)">
+<stop stop-color="#1DDA0D"/>
+<stop offset="0.9999" stop-color="#00FF29" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_angular_31_595" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(185.738 190.671) rotate(87.6831) scale(265.232 255.634)">
+<stop stop-color="#1DDA0D"/>
+<stop offset="0.9999" stop-color="#00FF29" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
