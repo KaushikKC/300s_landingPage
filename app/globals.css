@@ -14,3 +14,26 @@ body {
     font-style: normal;
 }
 
+@layer components {
+    .underline-effect {
+        padding-bottom: 7px;
+        background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+        transition: 1s background-size;
+    }
+
+    .underline-effect:hover {
+        color: #1DDA0D;
+        background-size: 100% .1em;
+    }
+
+    .underline-effect {
+        background-position: left bottom;
+    }
+    .body-wrapper{
+        
+        border-radius: 10px;
+        background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5));
+        box-shadow: 0 0 5px 1px #000;
+       
+    }
+}
