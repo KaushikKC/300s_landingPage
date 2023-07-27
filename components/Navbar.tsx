@@ -11,9 +11,9 @@ function Navbar() {
   return (
     <div className='fixed h-[100px] w-full md:h-full md:w-[100px] md:border-r-2 md:border-b-0 border-b-2 border-[#8D8D8D] z-[1000]'>
         <div className='flex md:flex-col flex-row md:py-10 px-4 justify-between items-center h-full '>
-            <div className='md:h-[150px]'>
-            <Image src={logo} alt='' className='md:w-[156px] w-[90px] h-[39px] md:h-[62px] md:rotate-[270deg] cursor-pointer'/>
-            </div>
+            
+            <Image src={logo} alt='' className='md:w-[147px] w-[90px] h-[39px] md:h-[59px] md:rotate-[270deg] cursor-pointer'/>
+            
             <div className='z-[100]' onClick={() => setIsOpen(!isOpen)}>
             {
             !isOpen ?
