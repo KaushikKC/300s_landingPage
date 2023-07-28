@@ -6,7 +6,7 @@ import clock from '../Assets/Images/Infinite-Sand-Clock.svg'
 function Hero() {
   return (
     <div className='h-screen relative text-white flex flex-col lg:flex-row justify-between'>
-      <div className='absolute top-[520px] md:top-[500px] left-[230px] md:left-[500px] lg:left-[680px]'>
+      <div className='absolute top-[440px] md:top-[500px] left-[200px] md:left-[500px] lg:left-[680px]'>
       <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg" className='h-[30px] w-[30px] md:h-[53px] md:w-[53px]'>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.9375 9.9375H25.6719V23.1875H9.9375V9.9375ZM10.7656 10.7656H24.8438V22.3594H10.7656V10.7656Z" fill="url(#paint0_linear_31_551)"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.28125 8.28125V28.1562H30.6406V8.28125H8.28125ZM29.8125 9.10938H9.10938V27.3281H29.8125V9.10938Z" fill="url(#paint1_linear_31_551)"/>
@@ -97,7 +97,7 @@ function Hero() {
 
 
 
-        <div className='pl-[30px] md:pl-[200px] lg:pl-[300px] pt-[150px] md:py-[83px] lg:w-[870px] z-20'>
+        <div className='pl-[30px] md:pl-[200px] lg:pl-[300px] pt-[120px] md:py-[83px] lg:w-[870px] z-20'>
         <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg" className='w-[72px] h-[72px] md:w-[92px] md:h-[92px]'>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M45.9996 91.9992H32.4226C32.3731 91.9995 32.3235 91.9998 32.2739 91.9999L32.1997 92H2.00002H2.21769e-05L0 91.9992V89.9992V45.9996C0 20.5947 20.5947 0 45.9996 0C71.4045 0 91.9992 20.5947 91.9992 45.9996C91.9992 71.4045 71.4045 91.9992 45.9996 91.9992ZM27.5998 38.7982C15.6834 38.7982 5.66867 46.9402 2.81518 57.9645C6.72157 50.8343 14.2961 45.9996 22.9998 45.9996C35.7023 45.9996 45.9996 56.297 45.9996 68.9994C45.9996 77.7005 41.168 85.273 34.0413 89.1805C45.0616 86.3242 53.1996 76.3114 53.1996 64.398C53.1996 50.2596 41.7381 38.7982 27.5998 38.7982ZM2.00002 73.599V89.9977H18.5956C27.5628 89.8929 34.7997 82.5911 34.7997 73.599C34.7997 64.5417 27.4572 57.1992 18.3999 57.1992C9.34248 57.1992 2.00002 64.5417 2.00002 73.599ZM2.53331 64.2763C4.67619 54.9528 13.026 47.9996 22.9998 47.9996C34.5977 47.9996 43.9996 57.4016 43.9996 68.9994C43.9996 78.9738 37.0456 87.3241 27.7214 89.4663C33.154 86.268 36.7997 80.3593 36.7997 73.599C36.7997 63.4371 28.5618 55.1992 18.3999 55.1992C11.6402 55.1992 5.73185 58.8444 2.53331 64.2763ZM71.5994 55.1988C71.5994 70.9995 61.0688 84.3406 46.643 88.5868C57.1737 83.2928 64.3995 72.3904 64.3995 59.8002C64.3995 42.0168 49.9832 27.6005 32.1997 27.6005C19.6059 27.6005 8.70071 34.8306 3.40848 45.3664C7.65115 30.935 20.995 20.3991 36.7997 20.3991C56.019 20.3991 71.5994 35.9794 71.5994 55.1988ZM3.1109 51.6561C7.71442 42.8266 16.9531 36.7982 27.5998 36.7982C42.8427 36.7982 55.1996 49.155 55.1996 64.398C55.1996 75.0494 49.1658 84.2916 40.3298 88.893C53.0598 85.3431 62.3995 73.6624 62.3995 59.8002C62.3995 43.1214 48.8786 29.6005 32.1997 29.6005C18.3427 29.6005 6.6655 38.9333 3.1109 51.6561ZM41.3997 9.19953C24.915 9.19953 10.6807 18.8342 4.02062 32.7797C9.63351 14.9389 26.3055 2 45.9996 2C70.2999 2 89.9992 21.6993 89.9992 45.9996C89.9992 65.6949 77.0587 82.3678 59.2162 87.9797C73.1632 81.3202 82.7993 67.085 82.7993 50.5992C82.7993 27.7348 64.2641 9.19953 41.3997 9.19953ZM3.71387 39.0694C8.64401 22.9349 23.6514 11.1995 41.3997 11.1995C63.1595 11.1995 80.7993 28.8394 80.7993 50.5992C80.7993 68.3486 69.0625 83.3567 52.9265 88.2859C65.1673 82.3085 73.5994 69.7383 73.5994 55.1988C73.5994 34.8749 57.1236 18.3991 36.7997 18.3991C22.2612 18.3991 9.69177 26.83 3.71387 39.0694Z" fill="url(#paint0_linear_31_527)"/>
           <defs>
@@ -108,12 +108,12 @@ function Hero() {
             </linearGradient>
           </defs>
         </svg>
-            <h3 className=' text-[20px] md:text-[24px] font-[500] my-[20px] leading-4'>Future of trading is here.</h3>
-            <h1 className='my-[20px] md:my-[30px] text-[56px] md:text-[96px] font-[500] w-[300px] md:w-[500px] leading-[80px]'>Fixed Time.
+            <h3 className=' text-[20px] md:text-[24px] font-[500] my-[15px] leading-3 md:leading-4'>Future of trading is here.</h3>
+            <h1 className='my-[15px] md:my-[30px] text-[40px] md:text-[96px] font-[500] w-[300px] md:w-[500px] leading-[70px] md:leading-[80px]'>Fixed Time.
                 Infinite.
                 Possibilities.
             </h1>
-            <h3 className='my-[30px] md:my-[50px] text-[20px] md:text-[24px] leading-3'>like never before </h3>
+            <h3 className='my-[25px] md:my-[50px] text-[20px] md:text-[24px] leading-3'>like never before </h3>
             <button className='mt-[20px] bg-[#D90D8B] rounded-xl md:px-[26px] px-[20px] py-[4px] md:py-[6px] shadow-[0px_20px_90px_-12px] shadow-[#ffffffcc] text-[20px] md:text-[24px]'>Join Now</button>
         </div>
 
