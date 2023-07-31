@@ -23,16 +23,6 @@ module.exports = {
            
           },
         },
-        'side-in-left': {
-          '0%': {
-            opacity: '0',
-            // transform: 'translateX(-100%)',
-          },
-          '100%': {
-            opacity: '1',
-            // transform: 'translateX(0)',
-          },
-        },
         'fade-in': {
           '0%': {
             opacity: '0',
@@ -43,8 +33,15 @@ module.exports = {
           '100%': {
             opacity: '1',
           },
+        },
+        'drop-down': {
+          '0%' : {transform: 'translateY(-200px) scaleY(0.9)', opacity: '0'},
+  '5%': {opacity: '.7'},
+  '50%' :{transform: 'translateY(0px) scaleY(1)', opacity: '1'},
+  '65%': {transform: 'translateY(-17px) scaleY(.9)', opacity: '1'},
+  '75%' :{transform: 'translateY(-22px) scaleY(.9)', opacity: '1'},
+  '100%' :{transform: 'translateY(0px) scaleY(1)', opacity: '1'}
         }
-
       }
     },
   },

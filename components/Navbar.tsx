@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { useAnimate, stagger } from "framer-motion";
 import logo from '../Assets/Images/logo.png'
+import Link from 'next/link';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,9 @@ function Navbar() {
 
   return (
     <div className='fixed h-[100px] w-full md:h-full md:w-[100px] md:border-r-2 md:border-b-0 border-b-2 border-[#8D8D8D] z-[1000]'>
-        <div className='flex md:flex-col flex-row md:py-10 px-4 justify-between items-center h-full '>
+        <div className='flex md:flex-col px-3 md:px-0 flex-row md:py-10 justify-between items-center h-full '>
             
-            <Image src={logo} alt='' className='md:w-[147px] w-[90px] h-[39px] md:h-[59px] md:rotate-[270deg] cursor-pointer'/>
+            <Image src={logo} alt='' className='md:w-[157px] w-[90px] h-[39px] md:h-[59px] md:rotate-[270deg] cursor-pointer'/>
             
             <div className='z-[100]' onClick={() => setIsOpen(!isOpen)}>
             {
@@ -33,10 +34,10 @@ function Navbar() {
           {
             isOpen &&
             <div className='w-screen fixed top-0 left-0 md:left-[100px] body-wrapper  h-screen'>
-            <nav className=" h-full fixed  top-0 rounded-lg drop-shadow-lg flex justify-center  items-center w-full md:w-[300px] bg-[#4a4a4a]/80 animate-[side-in-left_.5s_ease-in-out]">
+            <nav className=" h-full fixed  top-0 rounded-lg drop-shadow-lg flex justify-center  items-center w-full md:w-[300px] bg-[#4a4a4a]/80 animate-[fade-in_.5s_ease-in-out]">
           <ul className='flex flex-col gap-10 ml-[280px] text-white text-3xl justify-center items-start translate-x-[-100%] will-change-transform animate-[fade-in-down_.5s_ease-in-out]'>
             <li className='cursor-pointer drop-shadow-lg underline-effect'>Home</li>
-            <li className='cursor-pointer drop-shadow-lg underline-effect'>DAPP</li>
+            <Link href='/Dapp' className='cursor-pointer drop-shadow-lg underline-effect'>DAPP</Link>
             <li className='cursor-pointer drop-shadow-lg underline-effect'>LitePaper</li>
             <li className='cursor-pointer drop-shadow-lg underline-effect'>Team</li>
           </ul>

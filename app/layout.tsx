@@ -16,7 +16,7 @@ export default function RootLayout({
       <link rel='icon' href='/favicon.ico'/>
         <title>300s</title>
       </head>
-      <body >{children}</body>
+      <body className='bg-[#303030]'>{children}</body>
     </html>
   )
 }

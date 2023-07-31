@@ -117,8 +117,8 @@ function Hero() {
             <button className='mt-[20px] bg-[#D90D8B] rounded-xl md:px-[26px] px-[20px] py-[4px] md:py-[6px] shadow-[0px_20px_90px_-12px] shadow-[#ffffffcc] text-[20px] md:text-[24px]'>Join Now</button>
         </div>
 
-        <div className='mt-[20px] hidden lg:inline'>
-          <Image className='h-[800px] w-[400px]' src={clock} alt='' />
+        <div className='relative mt-[20px] hidden lg:inline transform animate-[drop-down_1s_linear_forwards_1.2s__inifinite]'>
+          <Image className='h-[800px] w-[400px] ' src={clock} alt='' />
         </div>
 
         <div className='lg:flex lg:justify-center lg:items-center  z-20'>
